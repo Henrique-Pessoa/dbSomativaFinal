@@ -7,3 +7,8 @@ select nome, count(idLocaisFk) from locais join tarefa on id = idLocaisFk group 
 select nome,count(idLocaisFk) from statusTarefa join tarefa on idTarefaFkStatus = idTarefa join status on idStatusFk = idStatus join locais on idLocaisFk = id where statusStatus !="concluida" and statusStatus != "Encerrada" group by idLocaisFk;
 select nome,count(idTarefaFk) from usuarios join tarefaResponsaveis on id = idUsuarioFk  group by nome;
 select nome,count(idTarefa) from locais join tarefa on id = idLocaisFk group by nome;
+
+Etapa 3 Resposta:
+  O banco de dados não relacional deve ser usado para manipular dados enormes e não estruturados, os bancos de dados não relacionais é mais adequado quando é necessario bastante performace, diante disso eu escolhi os relacionais pois se trata de um projeto academico e que não vai para produção,
+  Além disso foi escolhido o mysql pois o time de desenvolvedores tem mais experiência e familiaridade com esse banco.
+  
