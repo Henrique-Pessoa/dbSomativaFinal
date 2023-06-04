@@ -9,6 +9,7 @@ select nome,count(idTarefaFk) from usuarios join tarefaResponsaveis on id = idUs
 select nome,count(idTarefa) from locais join tarefa on id = idLocaisFk group by nome;
 
 Etapa 3 Resposta:
+  Eu acredito que o banco de dados Nosql seria melhor entrentanto...
   O banco de dados não relacional deve ser usado para manipular dados enormes e não estruturados, os bancos de dados não relacionais é mais adequado quando é necessario bastante performace, diante disso eu escolhi os relacionais pois se trata de um projeto academico e que não vai ser disponibilizado para o publico em geral.
   
   Além disso foi escolhido o mysql pois o time de desenvolvedores tem mais experiência e familiaridade com esse banco.
