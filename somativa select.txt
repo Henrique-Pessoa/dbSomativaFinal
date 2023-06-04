@@ -7,6 +7,7 @@ select nome, count(idLocaisFk) from locais join tarefa on id = idLocaisFk group 
 select nome,count(idLocaisFk) from statusTarefa join tarefa on idTarefaFkStatus = idTarefa join status on idStatusFk = idStatus join locais on idLocaisFk = id where statusStatus !="concluida" and statusStatus != "Encerrada" group by idLocaisFk;
 select nome,count(idTarefaFk) from usuarios join tarefaResponsaveis on id = idUsuarioFk  group by nome;
 select nome,count(idTarefa) from locais join tarefa on id = idLocaisFk group by nome;
+select * from arquivo join usuarios on idUsuarioFk = id where id = 1;
 
 Etapa 3 Resposta:
   Eu acredito que o banco de dados Nosql seria melhor entrentanto...
